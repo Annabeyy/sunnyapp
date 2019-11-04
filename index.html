@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sunnyapp</title>
+    <meta charset="UTF-8" />
+
+    <script src="https://kit.fontawesome.com/c5c9a66b9c.js" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <section class="weather-app">
+
+            <div class="search float">
+                <form id="search-form">
+                    <input id="search-input" type="text" placeholder="Search City" autocomplete="off" />
+                    <button type="submit" value="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            </br>
+            <hr>
+            </br>
+
+            <div class="row">
+                <div class="col-4">
+                    <h1 id="city-name">Berlin</h1>
+
+                    <ul id="data-time">
+                        <li id="current-day">
+                            Monday - Ocotber 17
+                        </li>
+                        <li id="current-time">
+                            20:00
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <div class="clearfix">
+                        <i id="icon-today" class="fas fa-cloud-sun float-centre"></i>
+                        <div>
+                            <div class="weather-temperature-today centre">
+                                <span id="temperature"></span>
+
+                                <span class="weather-unit">
+                                    <small>
+                                        <a href="#" id="celsius">
+                                            ºC
+                                        </a>
+                                        |
+                                        <a href="#" id="fahrenheit">
+                                            ºF
+                                        </a>
+                                    </small>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <hr>
+            </br>
+
+            <div class="row forecast">
+                <div class="col-sm next-day">
+                    <div>
+                        <i class="fas ffas fa-sun"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            Monday
+                        </li>
+                        <li class="weather-temperature float-centre">
+                            <span id="day">
+                                11 º
+                            </span>
+                            <span id="night">
+                                0º
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                </br>
+
+                <div class="col-sm next-day">
+                    </br>
+                    <div>
+                        <i class="fas fas fa-sun"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            Tuesday
+                        </li>
+                        <li class="weather-temperature float-centre">
+                            <span id="day">
+                                8º
+                            </span>
+                            <span id="night">
+                                -3º
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm next-day">
+                    </br>
+                    <div>
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            Wednesday
+                        </li>
+                        <li class="weather-temperature float-centre">
+                            <span id="day">
+                                10º
+                            </span>
+                            <span id="night">
+                                1º
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm next-day">
+                    </br>
+                    <div>
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            Thursday
+                        </li>
+                        <li class="weather-temperature float-centre">
+                            <span id="day">
+                                4º
+                            </span>
+                            <span id="night">
+                                -6º
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm next-day">
+                    </br>
+                    <div>
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            Friday
+                        </li>
+                        <li class="weather-temperature float-centre">
+                            <span id="day">
+                                10º
+                            </span>
+                            <span id="night">
+                                -4º
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+        </section>
+    </div>
+
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
